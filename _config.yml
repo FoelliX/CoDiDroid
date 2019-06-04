@@ -1,0 +1,5 @@
+theme: jekyll-theme-slate
+title: CoDiDroid
+description: Cooperative and Distributed Android App Analysis Tool Framework
+show_downloads: true
+logo: https://foellix.github.io/CoDiDroid/logo.png
