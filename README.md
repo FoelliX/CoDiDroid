@@ -3,8 +3,9 @@
 </p>
 
 # CoDiDroid
-Along with the paper *Together Strong: Cooperative Android App Analysis* (see [Publications](#Publications)) we developed CoDiDroid, a **co**operative (and **di**stributed) An**droid** app analysis tool framework.
-It represents an instance of a network of analysis tools build by setting up different [AQL-WebServices](https://github.com/FoelliX/AQL-WebService).  
+Along with the paper *Together Strong: Cooperative Android App Analysis* we developed [CoDiDroid](https://FoelliX.github.io/CoDiDroid), a **co**operative (and **di**stributed) An**droid** app analysis tool framework.
+With CoDiDroid the burden, (i) to collect expert knowledge to run all tools in the network and (ii) to provide sufficient resources to execute these tools successfully, is shifted from the users to the experts setting up CoDiDroid.  
+CoDiDroid represents an instance of a network of taint-analysis tools build by setting up multiple [AQL-WebServices](https://github.com/FoelliX/AQL-WebService).
 The figure below gives a brief overview of this instance:
 
 <p align="center">
@@ -39,7 +40,7 @@ MATCH [
 ]
 ```
 
-The `MATCH` operator is bound to PIM which deals with the computation of the final answer by combining all information gathered by the questions inside its scope `[...]`. The preprocessor keyword `'DEOBFUSCATE'` leads to the execution of DroidRA in order to resolve reflective statements in app `A.apk`. The keyword `'UNCOVER'` as well as the feature `'NATIVE'` is related to NOAH. NOAH helps uncovering flows in native code. All questions asking for flows are answered by FlowDroid by default. Information about IntentSources and -Sinks are computed by IC3.
+The `MATCH` operator is bound to [PIM](https://github.com/FoelliX/PIM) which deals with the computation of the final answer by combining all information gathered by the questions inside its scope `[...]`. The preprocessor keyword `'DEOBFUSCATE'` leads to the execution of [DroidRA](https://github.com/serval-snt-uni-lu/DroidRA) in order to resolve reflective statements in app `A.apk`. The keyword `'UNCOVER'` as well as the feature `'NATIVE'` is related to [NOAH](https://github.com/FoelliX/NOAH). [NOAH](https://github.com/FoelliX/NOAH) helps uncovering flows in native code. All questions asking for flows are answered by [FlowDroid](https://github.com/secure-software-engineering/FlowDroid) by default. Information about IntentSources and -Sinks are computed by [IC3](https://github.com/FoelliX/ic3).
 
 The complete example as well as its results are explained in the associated paper (see [Publications](#Publications)).
 
@@ -54,7 +55,7 @@ The novel benchmark cases (Star, Ring and the running example) are also availabl
 
 ## Publications
 - *Together Strong: Cooperative Android App Analysis* (Felix Pauck, Heike Wehrheim)  
-t.b.a.
+ESEC/FSE 2019 [https://dl.acm.org/citation.cfm?id=3338915](https://dl.acm.org/citation.cfm?id=3338915)
 
 ## Contact
 **Felix Pauck** (FoelliX)  
