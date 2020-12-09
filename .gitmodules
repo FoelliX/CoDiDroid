@@ -1,0 +1,3 @@
+[submodule "AQL-CheckOperator"]
+	path = AQL-CheckOperator
+	url = https://github.com/FoelliX/AQL-CheckOperator.git
